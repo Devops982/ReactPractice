@@ -1,5 +1,8 @@
 .SideBar {
-  height: 50%;
+  height: 1000px;
   width: 250px;
   background-color: #f6f8fa;
+  border-radius: 20px;
+  align-content: center;
+  justify-content: center;
 }

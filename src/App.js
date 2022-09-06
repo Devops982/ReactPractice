@@ -13,13 +13,23 @@ import ClassClicks from "./components/Practise/ClassClicks";
 import NameList from "./components/Practise/NameList";
 import SideBar from "./components/Layout/SideBar";
 import EnhancedTable from "./components/Layout/Table";
+import ChartApp from "./components/Practise/Chart";
+import PrimarySearchAppBar from "./components/Layout/Appbar";
 
 function App() {
   return (
     <div>
+      {/* <PrimarySearchAppBar /> */}
       <ResponsiveAppBar />
-      <div className="UI">
-        <SideBar /> <EnhancedTable />
+      <div>
+        <div className="UI">
+          <div>
+            <SideBar />
+          </div>{" "}
+          <div>
+            <EnhancedTable /> <ChartApp />
+          </div>
+        </div>
       </div>
 
       {/* <NameList /> */}
