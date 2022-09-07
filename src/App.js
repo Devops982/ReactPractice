@@ -8,13 +8,15 @@ import Welcome from "./components/Practise/Welcome";
 import Message from "./components/Practise/Message";
 import Counter from "./components/Practise/Counter";
 import ResponsiveAppBar from "./components/Layout/Header";
-import TemporaryDrawer from "./components/Layout/SideBar";
+import TemporaryDrawer from "./components/Layout/SideBar/SideBar";
 import ClassClicks from "./components/Practise/ClassClicks";
 import NameList from "./components/Practise/NameList";
-import SideBar from "./components/Layout/SideBar";
+import SideBar from "./components/Layout/SideBar/SideBar";
 import EnhancedTable from "./components/Layout/Table";
 import ChartApp from "./components/Practise/Chart";
 import PrimarySearchAppBar from "./components/Layout/Appbar";
+import ExchangeRate from "./components/Api/ExchangeRate";
+import HookCounter from "./components/Practise/HookCounter";
 
 function App() {
   return (
@@ -25,9 +27,18 @@ function App() {
         <div className="UI">
           <div>
             <SideBar />
-          </div>{" "}
+          </div>
           <div>
-            <EnhancedTable /> <ChartApp />
+            <div>
+              <HookCounter />
+              <EnhancedTable />
+            </div>
+            <div>
+              <ExchangeRate />
+            </div>
+            <div>
+              <ChartApp />
+            </div>
           </div>
         </div>
       </div>
