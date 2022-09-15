@@ -2,24 +2,28 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
-import Apicall from "./components/Practise/ApiCall";
-import Greet from "./components/Practise/Greet";
-import Welcome from "./components/Practise/Welcome";
-import Message from "./components/Practise/Message";
-import Counter from "./components/Practise/Counter";
+import Apicall from "./components/Practise/ReactClass/ApiCall";
+import Greet from "./components/Practise/ReactProps/Greet";
+import Welcome from "./components/Practise/ReactProps/Welcome";
+import Message from "./components/Practise/ReactProps/Message";
+import Counter from "./components/Practise/ReactClass/Counter";
 import ResponsiveAppBar from "./components/Layout/Header";
 import TemporaryDrawer from "./components/Layout/SideBar/SideBar";
-import ClassClicks from "./components/Practise/ClassClicks";
-import NameList from "./components/Practise/NameList";
+import ClassClicks from "./components/Practise/ReactClass/ClassClicks";
+import NameList from "./components/Practise/ReactProps/NameList";
 import SideBar from "./components/Layout/SideBar/SideBar";
 import EnhancedTable from "./components/Layout/Table";
-import ChartApp from "./components/Practise/Chart";
+import ChartApp from "./components/Practise/ReactCharts/Chart";
 import PrimarySearchAppBar from "./components/Layout/Appbar";
 import ExchangeRate from "./components/Api/ExchangeRate";
-import HookCounter from "./components/Practise/HookCounter";
-import UseState from "./components/Practise/UseState";
-import UseEffect from "./components/Practise/UseEffect";
-import UseEffectConditional from "./components/Practise/UseEffectConditional";
+import HookCounter from "./components/Practise/ReactHooks/UseState/HookCounter";
+import UseState from "./components/Practise/ReactHooks/UseState/UseState";
+import UseEffect from "./components/Practise/ReactHooks/UseEffect/UseEffect";
+import UseEffectConditional from "./components/Practise/ReactHooks/UseEffect/UseEffectConditional";
+import MouseCoordinates from "./components/Practise/ReactHooks/UseEffect/MouseCoordinates";
+import { Timer } from "@mui/icons-material";
+import TimerDependency from "./components/Practise/ReactHooks/UseEffect/TimerDependency";
+import DataFetching from "./components/Practise/ReactHooks/UseEffect/DataFetching";
 
 function App() {
   return (
@@ -33,17 +37,21 @@ function App() {
           </div>
           <div>
             <div>
-              <HookCounter />
-              <EnhancedTable />
+              {/* <HookCounter />
+              <EnhancedTable /> */}
             </div>
             <div>
-              <UseState />
+              {/* <UseState />
               <UseEffect />
               <UseEffectConditional />
-              <ExchangeRate />
+              <MouseCoordinates /> */}
+              {/* <ExchangeRate /> */}
             </div>
             <div>
-              <ChartApp />
+              {/* <ChartApp />
+              <TimerDependency /> */}
+              {/* <DataFetching /> */}
+              <ExchangeRate />
             </div>
           </div>
         </div>
