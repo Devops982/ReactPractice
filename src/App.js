@@ -17,6 +17,9 @@ import ChartApp from "./components/Practise/Chart";
 import PrimarySearchAppBar from "./components/Layout/Appbar";
 import ExchangeRate from "./components/Api/ExchangeRate";
 import HookCounter from "./components/Practise/HookCounter";
+import UseState from "./components/Practise/UseState";
+import UseEffect from "./components/Practise/UseEffect";
+import UseEffectConditional from "./components/Practise/UseEffectConditional";
 
 function App() {
   return (
@@ -34,6 +37,9 @@ function App() {
               <EnhancedTable />
             </div>
             <div>
+              <UseState />
+              <UseEffect />
+              <UseEffectConditional />
               <ExchangeRate />
             </div>
             <div>
