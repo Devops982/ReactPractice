@@ -14,12 +14,12 @@ const ExchangeRate = () => {
     },
     data: data,
   };
-  const [posts, setposts] = useState([]);
+  const [currencyRates, setCurrencyRates] = useState([]);
   useEffect(() => {
     axios(config)
       .then(function (response) {
         console.log(JSON.stringify(response.data));
-        setposts(response.data);
+        setCurrencyRates(response.data);
       })
       .catch(function (error) {
         console.log(error);
@@ -34,7 +34,7 @@ const ExchangeRate = () => {
     <h1>
       <div> DataFetching</div>
       <ul>
-        {posts.map((post) => (
+        {currencyRates.map((post) => (
           <li key={post.id}>
             {post.currency}-{post.exchangerate}
           </li>
