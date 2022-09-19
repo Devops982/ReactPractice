@@ -164,7 +164,7 @@ export default function Navbar() {
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            MUI
+            India Post
           </Typography>
           <Search>
             <SearchIconWrapper>
