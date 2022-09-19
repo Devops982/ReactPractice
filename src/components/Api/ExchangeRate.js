@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import "./ExchangeRate.css";
 
 const ExchangeRate = () => {
   var axios = require("axios");
@@ -31,7 +32,7 @@ const ExchangeRate = () => {
   }, []);
 
   return (
-    <h1>
+    <div className="UI">
       <div> DataFetching</div>
       <ul>
         {currencyRates.map((post) => (
@@ -40,7 +41,7 @@ const ExchangeRate = () => {
           </li>
         ))}
       </ul>
-    </h1>
+    </div>
   );
 };
 
