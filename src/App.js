@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import SideBar from "./components/Layout/SideBar/SideBar";
+import SideBar from "./components/Layout/SideBar/SideBarLayout";
 import Navbar from "./components/Layout/NavBarComponents/Navbar";
 
 function App() {
